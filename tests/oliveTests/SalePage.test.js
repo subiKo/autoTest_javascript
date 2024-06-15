@@ -18,10 +18,19 @@ test.afterEach(async () => {
     console.log('SalePage.test.js 테스트 수행 완료');
 });
 
-test('세일 페이지에서 마지막 페이지도 이동 시 결함 확인', async ({ page }) => {
+test('세일 페이지에서 맨즈케어 마지막 페이지도 이동 시 결함 확인', async ({ page }) => {
 
     await mainPage.clickSaleMenuButton();
     await salePage.clickMansButton();
+    await salePage.clickNextPageButton();
+    await salePage.expectCategoryText(expectMessage);
+
+});
+
+test('세일 페이지에서 코스메틱 마지막 페이지도 이동 시 결함 확인', async ({ page }) => {
+
+    await mainPage.clickSaleMenuButton();
+    await salePage.clickCosmeticButton();
     await salePage.clickNextPageButton();
     await salePage.expectCategoryText(expectMessage);
 

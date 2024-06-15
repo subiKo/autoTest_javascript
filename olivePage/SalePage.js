@@ -12,6 +12,10 @@ class SalePage {
         this.page = page;
     }
 
+    async clickCosmeticButton() {
+        await this.page.locator(cosmeticButton).click();
+    }
+
     async clickMansButton() {
         await this.page.locator(mansButton).click();
     }
