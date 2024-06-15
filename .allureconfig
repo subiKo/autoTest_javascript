@@ -1,0 +1,6 @@
+{
+  "outputDir": "allure-results",
+  "disableWebdriverStepsReporting": true,
+  "disableWebdriverScreenshotsReporting": false,
+  "disableWebdriverVideosReporting": false
+}
