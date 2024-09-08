@@ -2,7 +2,7 @@
 const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
-    workers: 1,
+    workers: 2,
     testDir: './tests',
     timeout: 0,
     expect: {
@@ -15,7 +15,7 @@ module.exports = defineConfig({
     ],
     use: {
         headless: false,
-        viewport: { width: 1280, height: 720 },
+        viewport: { width: 1920, height: 1080 },
         actionTimeout: 0,
         ignoreHTTPSErrors: true,
         video: 'on',

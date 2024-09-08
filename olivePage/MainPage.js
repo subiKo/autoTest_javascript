@@ -12,7 +12,6 @@ class MainPage {
 
     constructor(page) {
         this.page = page;
-        this.title = page.locator('.navbar__title');
     }
 
     async gotoPage() {
@@ -21,6 +20,7 @@ class MainPage {
 
     async clickSaleMenuButton(){
         this.page.locator(saleMenuButton).click();
+
     }
 }
 

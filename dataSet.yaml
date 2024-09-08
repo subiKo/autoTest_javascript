@@ -1,0 +1,4 @@
+# config.yml
+domain:
+  naverWeather: https://weather.naver.com/today
+  google: https://www.google.com

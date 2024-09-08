@@ -24,6 +24,7 @@ test('세일 페이지에서 맨즈케어 마지막 페이지도 이동 시 결�
     await salePage.clickMansButton();
     await salePage.clickNextPageButton();
     await salePage.expectCategoryText(expectMessage);
+    await page.waitForTimeout(2000);
 
 });
 
@@ -33,5 +34,6 @@ test('세일 페이지에서 코스메틱 마지막 페이지도 이동 시 결�
     await salePage.clickCosmeticButton();
     await salePage.clickNextPageButton();
     await salePage.expectCategoryText(expectMessage);
+    await page.waitForTimeout(2000);
 
 });
